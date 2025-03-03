@@ -27,10 +27,10 @@ def calculator ():
         choice = input(f"type 'y' to continue the calculator with {solution} , or type 'n' to start a new cal calculator: ")
 
         if choice == "y":
-            num1 = solution 
-        else:
+            num1 = solution
+            should_accmulate = True
+        else :
             should_accmulate = False
-            print("\n" * 20)
-            calculator()
-            
+            print("its over")
+
 calculator()
