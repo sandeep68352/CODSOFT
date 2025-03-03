@@ -25,7 +25,13 @@ while not game_over :
         print("it's draw ")  
     else:
         print(" you entered invaild input ")   
-    stop_game = input("type 'y' for play again and 'n' for end the game :")
+    stop_game = input("type 'y' for play again and 'n' for end the game :").lower()
     if stop_game == "n":
         game_over = True
         print("GAME END")
+    elif stop_game == "y":
+        game_over = False 
+        print("PLAY AGAIN")
+    else:
+        game_over = True
+        print("YOUB ENTERD INVALID VALUE")
